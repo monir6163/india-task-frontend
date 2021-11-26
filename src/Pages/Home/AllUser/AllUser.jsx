@@ -17,8 +17,12 @@ const AllUser = () => {
                     All User List
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {
-                        users.map(user => <SingleUser
+                    {users.length === 0 ? <div className="flex justify-center items-center mx-auto">
+                        <div
+                            className=" animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-purple-500"
+                        ></div>
+                    </div>
+                        : users.map(user => <SingleUser
                             key={user._id}
                             user={user}
                         ></SingleUser>)
