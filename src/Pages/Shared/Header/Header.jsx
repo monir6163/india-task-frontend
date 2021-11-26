@@ -114,19 +114,10 @@ function Header() {
                                 <NavLink
                                     onClick={() => setIsOpen(!isOpen)}
                                     activeClassName="text-teal-400 font-bold"
-                                    to="/explore"
+                                    to="/alluser"
                                     className="block text-lg tracking-wide px-3 py-1 rounded-3xl"
                                 >
-                                    Explore
-                                </NavLink>
-
-                                <NavLink
-                                    onClick={() => setIsOpen(!isOpen)}
-                                    activeClassName="text-teal-400 font-bold"
-                                    to="/about"
-                                    className="block text-lg tracking-wide px-3 py-1 rounded-3xl"
-                                >
-                                    About Us
+                                    All User
                                 </NavLink>
                             </div>
                         </div>
