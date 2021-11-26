@@ -14,7 +14,7 @@ const SingleUser = (props) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                const url = `http://localhost:5000/delete/${id}`;
+                const url = `https://quiet-taiga-51107.herokuapp.com/delete/${id}`;
                 fetch(url, {
                     method: 'DELETE'
                 })

@@ -35,7 +35,7 @@ const User = () => {
     const { errors } = formState;
 
     function onSubmit(data) {
-        fetch("http://localhost:5000/users", {
+        fetch("https://quiet-taiga-51107.herokuapp.com/users", {
             method: "POST",
             headers: {
                 'content-type': "application/json"
